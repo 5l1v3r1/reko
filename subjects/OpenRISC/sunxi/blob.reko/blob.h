@@ -10103,7 +10103,7 @@ T_1153: (in (r5_1464 & 0xFF<32>) <= 1<32> : bool)
   Class: Eq_1153
   DataType: bool
   OrigDataType: bool
-T_1154: (in !((r5_1464 & 0xFF<32>) <= 1<32>) : bool)
+T_1154: (in !((r5_1464 & 0xFF<32>) <=u 1<32>) : bool)
   Class: Eq_1154
   DataType: bool
   OrigDataType: bool
@@ -14495,7 +14495,7 @@ T_2251: (in (r11_574 & 0xFF<32>) <= 3<32> : bool)
   Class: Eq_2251
   DataType: bool
   OrigDataType: bool
-T_2252: (in !((r11_574 & 0xFF<32>) <= 3<32>) : bool)
+T_2252: (in !((r11_574 & 0xFF<32>) <=u 3<32>) : bool)
   Class: Eq_2252
   DataType: bool
   OrigDataType: bool
@@ -14811,7 +14811,7 @@ T_2330: (in (r11_105 & 0xFF<32>) <= 3<32> : bool)
   Class: Eq_2330
   DataType: bool
   OrigDataType: bool
-T_2331: (in !((r11_105 & 0xFF<32>) <= 3<32>) : bool)
+T_2331: (in !((r11_105 & 0xFF<32>) <=u 3<32>) : bool)
   Class: Eq_2331
   DataType: bool
   OrigDataType: bool
@@ -15139,7 +15139,7 @@ T_2412: (in (r6_674 & 0xFF<32>) <= 1<32> : bool)
   Class: Eq_2412
   DataType: bool
   OrigDataType: bool
-T_2413: (in !((r6_674 & 0xFF<32>) <= 1<32>) : bool)
+T_2413: (in !((r6_674 & 0xFF<32>) <=u 1<32>) : bool)
   Class: Eq_2413
   DataType: bool
   OrigDataType: bool
@@ -15611,7 +15611,7 @@ T_2530: (in (r6_205 & 0xFF<32>) <= 1<32> : bool)
   Class: Eq_2530
   DataType: bool
   OrigDataType: bool
-T_2531: (in !((r6_205 & 0xFF<32>) <= 1<32>) : bool)
+T_2531: (in !((r6_205 & 0xFF<32>) <=u 1<32>) : bool)
   Class: Eq_2531
   DataType: bool
   OrigDataType: bool
@@ -15895,7 +15895,7 @@ T_2601: (in (r7_876 & 0xFF<32>) <= 1<32> : bool)
   Class: Eq_2601
   DataType: bool
   OrigDataType: bool
-T_2602: (in !((r7_876 & 0xFF<32>) <= 1<32>) : bool)
+T_2602: (in !((r7_876 & 0xFF<32>) <=u 1<32>) : bool)
   Class: Eq_2602
   DataType: bool
   OrigDataType: bool
@@ -16855,7 +16855,7 @@ T_2841: (in (r7_398 & 0xFF<32>) <= 1<32> : bool)
   Class: Eq_2841
   DataType: bool
   OrigDataType: bool
-T_2842: (in !((r7_398 & 0xFF<32>) <= 1<32>) : bool)
+T_2842: (in !((r7_398 & 0xFF<32>) <=u 1<32>) : bool)
   Class: Eq_2842
   DataType: bool
   OrigDataType: bool
@@ -17011,7 +17011,7 @@ T_2880: (in (r16_824 & 0xFF<32>) <= 1<32> : bool)
   Class: Eq_2880
   DataType: bool
   OrigDataType: bool
-T_2881: (in !((r16_824 & 0xFF<32>) <= 1<32>) : bool)
+T_2881: (in !((r16_824 & 0xFF<32>) <=u 1<32>) : bool)
   Class: Eq_2881
   DataType: bool
   OrigDataType: bool
@@ -17139,7 +17139,7 @@ T_2912: (in (r16_346 & 0xFF<32>) <= 1<32> : bool)
   Class: Eq_2912
   DataType: bool
   OrigDataType: bool
-T_2913: (in !((r16_346 & 0xFF<32>) <= 1<32>) : bool)
+T_2913: (in !((r16_346 & 0xFF<32>) <=u 1<32>) : bool)
   Class: Eq_2913
   DataType: bool
   OrigDataType: bool
@@ -26471,7 +26471,7 @@ T_5245: (in r8_464 >> 0x10<32> != (r8_464 & 0xFFFF<32>) : bool)
   Class: Eq_5245
   DataType: bool
   OrigDataType: bool
-T_5246: (in !(r8_464 >> 0x10<32> != (r8_464 & 0xFFFF<32>)) : bool)
+T_5246: (in !(r8_464 >>u 0x10<32> != (r8_464 & 0xFFFF<32>)) : bool)
   Class: Eq_5246
   DataType: bool
   OrigDataType: bool
@@ -29695,7 +29695,7 @@ T_6051: (in (word32) *r11_48 != 5<32> : bool)
   Class: Eq_6051
   DataType: bool
   OrigDataType: bool
-T_6052: (in !((word32) *r11_48 != 5<32>) : bool)
+T_6052: (in !((word32) Mem8[r11_48 + 0<32>:byte] != 5<32>) : bool)
   Class: Eq_6052
   DataType: bool
   OrigDataType: bool
@@ -29791,7 +29791,7 @@ T_6075: (in (word32) *r11_19 != 5<32> : bool)
   Class: Eq_6075
   DataType: bool
   OrigDataType: bool
-T_6076: (in !((word32) *r11_19 != 5<32>) : bool)
+T_6076: (in !((word32) Mem8[r11_19 + 0<32>:byte] != 5<32>) : bool)
   Class: Eq_6076
   DataType: bool
   OrigDataType: bool
@@ -41659,7 +41659,7 @@ T_9042: (in r2_127 == &((word32) (globals->tFFFFFFFF).dw0000 + 2<i32>) : bool)
   Class: Eq_9042
   DataType: bool
   OrigDataType: bool
-T_9043: (in !(r2_127 == &((word32) (globals->tFFFFFFFF).dw0000 + 2<i32>)) : bool)
+T_9043: (in !(r2_127 == 1<32>) : bool)
   Class: Eq_9043
   DataType: bool
   OrigDataType: bool
@@ -41979,7 +41979,7 @@ T_9122: (in r2_127 == &globals->dw000B : bool)
   Class: Eq_9122
   DataType: bool
   OrigDataType: bool
-T_9123: (in !(r2_127 == &globals->dw000B) : bool)
+T_9123: (in !(r2_127 == 0xB<32>) : bool)
   Class: Eq_9123
   DataType: bool
   OrigDataType: bool
@@ -50063,7 +50063,7 @@ T_11143: (in globals->dw134C4 != 0<32> : bool)
   Class: Eq_11143
   DataType: bool
   OrigDataType: bool
-T_11144: (in !(globals->dw134C4 != 0<32>) : bool)
+T_11144: (in !(Mem9[0x134C4<32>:word32] != 0<32>) : bool)
   Class: Eq_11144
   DataType: bool
   OrigDataType: bool
@@ -54631,7 +54631,7 @@ T_12285: (in r1_205[4<i32>] <= 9999<i32> : bool)
   Class: Eq_12285
   DataType: bool
   OrigDataType: bool
-T_12286: (in !(r1_205[4<i32>] <= 9999<i32>) : bool)
+T_12286: (in !(Mem382[r1_205 + 4<i32>:word32] <= 9999<i32>) : bool)
   Class: Eq_12286
   DataType: bool
   OrigDataType: bool
@@ -59215,7 +59215,7 @@ T_13431: (in r4 > 0<i32> : bool)
   Class: Eq_13431
   DataType: bool
   OrigDataType: bool
-T_13432: (in !(r4 > 0<i32>) : bool)
+T_13432: (in !(r4 >u 0<i32>) : bool)
   Class: Eq_13432
   DataType: bool
   OrigDataType: bool
@@ -59255,7 +59255,7 @@ T_13441: (in r13_52 > 0<i32> : bool)
   Class: Eq_13441
   DataType: bool
   OrigDataType: bool
-T_13442: (in !(r13_52 > 0<i32>) : bool)
+T_13442: (in !(r13_52 >u 0<i32>) : bool)
   Class: Eq_13442
   DataType: bool
   OrigDataType: bool
